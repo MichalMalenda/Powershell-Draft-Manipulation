@@ -55,9 +55,7 @@ Function Set-Draft{
 Function Get-Draft{
     Param(
         [Parameter(Mandatory)]
-        [string]$Subject,
-        [string]$Body,
-        [string]$Recipients
+        [string]$Subject
     )
     try{
         $Get_Draft = $Get_Drafts.Items | where {$_.Subject -eq $Subject}
