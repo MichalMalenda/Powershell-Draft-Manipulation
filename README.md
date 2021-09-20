@@ -17,4 +17,8 @@ Functions contained in the module are as follows: <br>
 3. **Get-Draft** This is for checking really if the draft exists
     * **Subject** gives you back infromation about the message with the selected Subject
 4. **Send-Draft** This sends the selected message.
-    * **bySubject** lets you chose the message that you want to send by the subject.
+    * **bySubject** lets you chose the message that you want to send by the subject
+5. To use the module, you can assign a shortcut to it
+   * C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NoExit "Import-Module 'PATH_TO_THE_MODULE'"
+   * or
+   * C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NoExit "Import-Module 'PATH_TO_THE_MODULE'"; "New-Draft -Subject test123" #this will import it and create a draft at the same time
