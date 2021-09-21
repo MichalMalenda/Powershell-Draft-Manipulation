@@ -75,5 +75,17 @@ Function Send-Draft{
         Write-Output "Item could not be found"
     }
     $Get_Draft.Send()
+        <#
+        .SYNOPSIS
+        Let's you play around with drafts
+        .DESCRIPTION
+        Module that let's you create, modify, send draft messages within Outlook of the same version.
+        .INPUTS
+        None.
+        .OUTPUTS
+        None, unless with get-draft in which case it's details about the drafts found.
+        .LINK
+        Online version: https://github.com/MichalMalenda/Powershell-Draft-Manipulation
+    #>
 }
 #to use this script it needs to be ran with Windows Powershell of the same version (32bit/64bit) as the version of your Outlook
